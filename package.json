@@ -1,0 +1,66 @@
+{
+  "name": "cetim-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hardhat.config.cjs",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network hardhat",
+    "deploy:fuji": "hardhat run scripts/deploy.js --network fuji",
+    "setup:fuji": "node scripts/setup-fuji.js",
+    "dev": "cd frontend && vite",
+    "build": "cd frontend && vite build",
+    "preview": "cd frontend && vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --ext .ts,.js",
+    "lint:fix": "eslint . --ext .ts,.js --fix",
+    "format:contracts": "prettier --write contracts/*.sol",
+    "lint:contracts": "solhint contracts/*.sol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luislucena16/cetim-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luislucena16/cetim-challenge/issues"
+  },
+  "homepage": "https://github.com/luislucena16/cetim-challenge#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.7.0",
+    "@typescript-eslint/eslint-plugin": "^8.46.0",
+    "@typescript-eslint/parser": "^8.46.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "chai": "^4.5.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^4.2.5",
+    "ethers": "^6.15.0",
+    "hardhat": "^2.22.4",
+    "mocha": "^11.7.4",
+    "prettier": "^2.8.8",
+    "prettier-plugin-solidity": "^1.4.3",
+    "solhint": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9"
+  },
+  "type": "module",
+  "dependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "dotenv": "^17.2.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}

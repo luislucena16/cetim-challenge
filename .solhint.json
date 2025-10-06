@@ -1,0 +1,19 @@
+{
+  "extends": "solhint:recommended",
+  "rules": {
+    "compiler-version": "off",
+    "no-empty-blocks": "warn",
+    "no-unused-vars": "warn",
+    "private-vars-leading-underscore": "warn",
+    "func-param-name-mixedcase": "warn",
+    "func-name-mixedcase": "warn",
+    "modifier-name-mixedcase": "warn",
+    "var-name-mixedcase": "warn",
+    "const-name-snakecase": "warn",
+    "use-forbidden-name": "warn",
+    "no-console": "warn",
+    "max-line-length": ["error", 120],
+    "quotes": ["error", "double"],
+    "gas-indexed-events": "off"
+  }
+}
